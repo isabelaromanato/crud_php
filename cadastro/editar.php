@@ -1,5 +1,6 @@
 <?php
     include('../componentes/header.php');
+    
 ?>
 
 
@@ -11,9 +12,14 @@
             </div>
             <div class="card-body">
                 <form method="post" action="">
-                    <input class="form-control" type="text" placeholder="Digite o nome" name="nome" id="nome">
+
+                <input type="hidden" name="acao" value="editar" />
+
+                <input type="hidden" name="usuarioId" value="<?php echo $usuariosId ?>" />
+
+                    <input class="form-control" type="text" placeholder="Digite o nome" name="nome" id="nome" value="<?php echo $dados["nome"] ?>">
                     <br />
-                    <input class="form-control" type="text" placeholder="Digite o sobrenome" name="sobrenome" id="sobrenome">
+                    <input class="form-control" type="text" placeholder="Digite o sobrenome" name="sobrenome" id="sobrenome" >
                     <br />
                     <input class="form-control" type="text" placeholder="Digite o email" name="email" id="email">
                     <br />
