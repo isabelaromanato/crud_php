@@ -1,5 +1,9 @@
 <?php
     include('../componentes/header.php');
+    // if (!isset($_SESSION["idUsuario"])) 
+    // {
+    //     header("location: ../login/index.php");
+    // }
 ?>
 
 
@@ -10,7 +14,8 @@
                 <h2>Cadastro</h2>
             </div>
             <div class="card-body">
-                <form method="post" action="">
+                <form method="post" action="../funcoes.php">
+                    <input type="hidden" name="acao" value="cadastrar">
                     <input class="form-control" type="text" placeholder="Digite o nome" name="nome" id="nome">
                     <br />
                     <input class="form-control" type="text" placeholder="Digite o sobrenome" name="sobrenome" id="sobrenome">

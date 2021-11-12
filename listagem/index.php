@@ -50,7 +50,7 @@
 
                 <button  class="btn btn-warning"><a href="../cadastro/editar.php?cod_pessoa=<?php echo $dados ["cod_pessoa"]?>">EDITAR</a></button> 
               
-                <button  class="btn btn-danger"><a href="funcoes.php/cod_pessoa=<?php  echo $dados ["cod_pessoa"]."&acoes=delete"?>">EXCLUIR</a></button>
+                <button  class="btn btn-danger"><a href="../funcoes.php?cod_pessoa=<?php  echo $dados ["cod_pessoa"]."&acao=delete"?>">EXCLUIR</a></button>
                 
                 
 
