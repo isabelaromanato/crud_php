@@ -10,23 +10,23 @@
         case 'login':
 
             $usuarioCadastrado= $_POST["txt_usuario"];
-            $senhaCadastrado= $_POST["txt_senha"];
+            $senhaCadastrada= $_POST["txt_senha"];
             
-            realizarLogin($usuarioCadastrado, $senhaCadastrado, $conexao);
+            realizarLogin($usuarioCadastrado, $senhaCadastrada, $conn);
         
             break;
         
-            #
+
         case 'sair':
 
-            echo "você vai fazer logout";
+            echo "LOGOUT";
 
             session_destroy();
             header("location: ./index.php");
             break;
 
         default:
-            # code...
+            
             break;
     }
 
